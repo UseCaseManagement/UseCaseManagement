@@ -1,0 +1,24 @@
+<apex:page standardcontroller="Campaign" extensions="PublicationController">
+ <apex:slds />
+<div class="slds-scope">
+
+    <apex:form >
+        <apex:pageBlock >
+         <!-- <apex:commandButton value="See all available Publications" action="{!search}"/> -->
+                <apex:pageBlockTable value="{!PublicationRecords}" var="pub">
+                     
+                    <apex:column value="{!pub.Name}"/>
+                    <apex:column value="{!pub.Publication_Type__c}"/>
+                    <apex:column value="{!pub.Publication_Cycle__c}"/>
+                    <apex:column value="{!pub.Publication_Language__c}"/>
+                    <apex:column value="{!pub.Publication_Revenue__c}"/>
+                    <apex:column value="{!pub.Region_of_Operation__c}"/>
+                   
+               
+                </apex:pageBlockTable>
+                    
+        </apex:pageBlock>
+           
+    </apex:form>
+    </div>
+</apex:page>

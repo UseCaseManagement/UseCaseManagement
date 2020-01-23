@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publication_Validation_2</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF(( 
+(ISPICKVAL(Campaign_Name__r.Status, &#39;In Progress&#39;)|| ISPICKVAL(Campaign_Name__r.Status, &#39;Planned&#39;)  )
+),false, true)</errorConditionFormula>
+    <errorDisplayField>Campaign_Name__c</errorDisplayField>
+    <errorMessage>Selected campaign is either closed or aborted</errorMessage>
+</ValidationRule>

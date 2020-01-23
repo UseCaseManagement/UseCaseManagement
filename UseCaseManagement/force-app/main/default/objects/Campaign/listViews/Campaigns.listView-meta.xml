@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Campaigns</fullName>
+    <columns>CAMPAIGN.NAME</columns>
+    <columns>CAMPAIGN.END_DATE</columns>
+    <columns>CAMPAIGN.CAMPAIGN_TYPE</columns>
+    <columns>CAMPAIGN.STATUS</columns>
+    <columns>Cost_of_the_Product__c</columns>
+    <columns>Current_Revenue__c</columns>
+    <columns>Actual_Cost__c</columns>
+    <columns>Targeted_Number_of_Publications__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Campaigns</label>
+</ListView>

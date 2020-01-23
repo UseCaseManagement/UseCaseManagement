@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Actual_Cost__c</fullName>
+    <externalId>false</externalId>
+    <label>Actual Cost</label>
+    <summarizedField>Campaign_Element__c.Cost_of_Publication_Clone__c</summarizedField>
+    <summaryForeignKey>Campaign_Element__c.Campaign_Name__c</summaryForeignKey>
+    <summaryOperation>sum</summaryOperation>
+    <type>Summary</type>
+</CustomField>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publications</fullName>
+    <columns>NAME</columns>
+    <columns>Cost_of_Publication__c</columns>
+    <columns>Publication_Type__c</columns>
+    <columns>Publication_Language__c</columns>
+    <columns>Publication_Cycle__c</columns>
+    <columns>Reach__c</columns>
+    <filterScope>Mine</filterScope>
+    <label>Publications</label>
+</ListView>

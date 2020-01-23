@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Publication_Validation_1</fullName>
+    <active>true</active>
+    <errorConditionFormula>IF((
+(( (ISPICKVAL( Campaign_Name__r.Type , &#39;Web&#39;) ||ISPICKVAL( Campaign_Name__r.Type , &#39;Both&#39;))&amp;&amp;INCLUDES(    Publication_Name__r.Publication_Type__c     , &#39;Web&#39;))||
+(ISPICKVAL( Campaign_Name__r.Type , &#39;Print&#39;) ||ISPICKVAL( Campaign_Name__r.Type , &#39;Both&#39;))&amp;&amp;INCLUDES(    Publication_Name__r.Publication_Type__c     , &#39;Print&#39;))
+), false, true)</errorConditionFormula>
+    <errorDisplayField>Publication_Name__c</errorDisplayField>
+    <errorMessage>Publication doesnt match the filter Criteria</errorMessage>
+</ValidationRule>
